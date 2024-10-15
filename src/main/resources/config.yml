@@ -1,0 +1,31 @@
+experience-extract-coupon:
+  material: PAPER
+  display-name: "&f경험치 추출권"
+  lore:
+    - "&7우클릭 시 경험치를 추출합니다."
+  custom-model-data: 0
+
+experience-coupon:
+  material: PAPER
+  display-name: "&f경험치 쿠폰"
+  lore:
+    - "&7우클릭 시 &a%experience% 경험치&7가 지급됩니다."
+  custom-model-data: 0
+
+message:
+  zero-experience: "§c보유 중인 경험치가 없습니다."
+  lack-inventory: "§c인벤토리에 공간이 부족합니다."
+  use-experience-extract-coupon: "§a%experience% 경험치를 추출하였습니다."
+  use-experience-coupon: "§a경험치권을 사용하였습니다. (+%experience%EXP)"
+
+sound:
+  use-experience-extract-coupon:
+    enabled: true
+    name: "minecraft:entity.experience_orb.pickup"
+    volume: 1
+    pitch: 1
+  use-experience-coupon:
+    enabled: true
+    name: "minecraft:entity.player.levelup"
+    volume: 1
+    pitch: 2
