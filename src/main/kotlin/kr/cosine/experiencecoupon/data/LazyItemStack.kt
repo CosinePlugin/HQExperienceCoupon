@@ -22,7 +22,7 @@ data class LazyItemStack(
                 }
                 val newLore = this@LazyItemStack.lore.map(replace)
                 if (newLore.isNotEmpty()) {
-                    lore = newLore
+                    it.lore = newLore
                 }
                 val newCustomModelData = this@LazyItemStack.customModelData
                 if (newCustomModelData != 0) {
