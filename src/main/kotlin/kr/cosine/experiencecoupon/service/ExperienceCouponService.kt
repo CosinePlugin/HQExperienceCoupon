@@ -21,7 +21,7 @@ class ExperienceCouponService(
         val experienceExtractCoupon = settingRegistry.findExperienceExtractCoupon() ?: return false
         if (!experienceExtractCoupon.isSimilar(itemStack)) return false
         val experienceCoupon = settingRegistry.findExperienceCoupon() ?: return false
-        val experience = player.totalExperience
+        val experience = player.calculateTotalExperiencePoints()
         if (experience <= 0) {
             Notice.ZERO_EXPERIENCE.notice(player)
             return true

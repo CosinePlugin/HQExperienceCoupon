@@ -7,10 +7,11 @@ version = "1.0.0"
 
 repositories {
     maven("https://maven.hqservice.kr/repository/maven-public")
+    maven("https://repo.papermc.io/repository/maven-public/")
 }
 
 dependencies {
-    compileOnly("org.spigotmc", "spigot-api", "1.17.1-R0.1-SNAPSHOT")
+    compileOnly("io.papermc.paper", "paper-api", "1.20.4-R0.1-SNAPSHOT")
 
     compileOnly("kr.hqservice", "hqframework-bukkit-core", "1.0.2-SNAPSHOT") {
         exclude("org.spigotmc")
